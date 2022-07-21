@@ -34,6 +34,7 @@ public class GranPremioDaoimpl implements GranPremioDao {
 		int filas=0;
 		try {
 			gprepo.save(gp);
+			filas=1;
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -41,21 +42,27 @@ public class GranPremioDaoimpl implements GranPremioDao {
 	}
 
 	@Override
-	public int removeGranPremio(GranPremio gp) {
-		int filas=0;
-		try {
+	public int removeGranPremio(GranPremio gp, int idGranPremio) {
+		if(gp!=null) {
+			gprepo.delete(gp);
+			return 1;
+		}else
+			return 0;
+	}
+
+	@Override
+	public int modifyGranPremio(GranPremio gp, int idGranPremio) {
+		if(findOne(idGranPremio)!=null) {
 			gprepo.save(gp);
-		}catch(Exception e) {
-			
-			e.printStackTrace();
-		}
-		return filas;
+			return 1;	
+		}else
+		return 0;
 	}
 
 	@Override
-	public int modifyGranPremio(GranPremio gp, int id) {
-		// TODO Auto-generated method stub
-		return 0;
+	public GranPremio findOne(int idGranPremio) {
+		
+		return gprepo.findById(idGranPremio).orElse(null);
 	}
 
 }

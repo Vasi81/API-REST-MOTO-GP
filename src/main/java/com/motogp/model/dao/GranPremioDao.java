@@ -12,9 +12,11 @@ public interface GranPremioDao {
 	
 	GranPremio findByCiudad(String ciudad);
 	
+	GranPremio findOne(int idGranPremio);
+	
 	int addGranPremio (GranPremio gp);
 	
-	int removeGranPremio (GranPremio gp);
+	int removeGranPremio (GranPremio gp, int idGranPremio);
 	
 	int modifyGranPremio (GranPremio gp, int id);
 
