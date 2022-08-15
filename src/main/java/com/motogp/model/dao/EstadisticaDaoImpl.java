@@ -19,7 +19,7 @@ public class EstadisticaDaoImpl implements EstadisticaDao {
 	}
 
 	@Override
-	public List<Estadistica> findByVelocidadPuntaMax() {
+	public int findByVelocidadPuntaMax() {
 		
 		return estrepo.findByVelocidadPuntaMax();
 	}
