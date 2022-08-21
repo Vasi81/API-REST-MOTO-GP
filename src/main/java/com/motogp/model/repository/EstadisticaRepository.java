@@ -1,6 +1,6 @@
 package com.motogp.model.repository;
 
-import java.util.List;
+
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -8,12 +8,13 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.motogp.model.beans.Estadistica;
 
+
 public interface EstadisticaRepository extends JpaRepository<Estadistica, Integer> {
 	
-	@Query("select Max(velocidadPunta) from Estadistica")
-	public int findByVelocidadPuntaMax();
+	@Query("select Max(velocidadPunta) from Estadistica e where e.granPremio.idGranPremio=?1")
+	public int findByVelocidadPuntaMax(int idGranPremio);
 	
-	@Query("select AVG(velocidadMedia) from Estadistica")
-	public List <Estadistica>findByVelocidadMedia();
+	@Query("select AVG(velocidadMedia) from Estadistica e where e.granPremio.idGranPremio=?1")
+	public int findByVelocidadMedia(int idGranPremio);
 
 }

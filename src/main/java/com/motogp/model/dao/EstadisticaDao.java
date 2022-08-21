@@ -5,17 +5,18 @@ import java.util.List;
 import com.motogp.model.beans.Estadistica;
 
 
+
 public interface EstadisticaDao {
 	
 	List<Estadistica> findAll();
 	
-	int findByVelocidadPuntaMax();
+	int findByVelocidadPuntaMax(int idGranPremio);
 	
-	List<Estadistica> findByVelocidadMedia();
+	int findByVelocidadMedia(int idGranPremio);
 	
 	int addEstadistica(Estadistica estadistica);
 	
-	int removeEstadistica(Estadistica estadistica);
+	int removeEstadistica(Estadistica estadistica, int id);
 	
 	int modifyEstadistica(Estadistica estadistica, int id);
 

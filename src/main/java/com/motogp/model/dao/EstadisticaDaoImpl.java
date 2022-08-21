@@ -19,15 +19,16 @@ public class EstadisticaDaoImpl implements EstadisticaDao {
 	}
 
 	@Override
-	public int findByVelocidadPuntaMax() {
+	public int findByVelocidadPuntaMax(int idGranPremio) {
 		
-		return estrepo.findByVelocidadPuntaMax();
+			return estrepo.findByVelocidadPuntaMax(idGranPremio);
+		
 	}
 
 	@Override
-	public List<Estadistica> findByVelocidadMedia() {
+	public int findByVelocidadMedia(int idGranPremio) {
 		
-		return estrepo.findByVelocidadMedia();
+		return estrepo.findByVelocidadMedia(idGranPremio);
 	}
 
 	@Override
@@ -43,15 +44,12 @@ public class EstadisticaDaoImpl implements EstadisticaDao {
 	}
 
 	@Override
-	public int removeEstadistica(Estadistica estadistica) {
-		int filas=0;
-		try {
+	public int removeEstadistica(Estadistica estadistica, int id) {
+		if(id!=0) {
 			estrepo.delete(estadistica);
-			filas=1;
-		}catch(Exception e) {
-			e.printStackTrace();
+			return 1;
 		}
-		return filas;
+		return 0;
 	}
 
 	@Override
