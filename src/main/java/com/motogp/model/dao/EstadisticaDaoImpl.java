@@ -61,4 +61,9 @@ public class EstadisticaDaoImpl implements EstadisticaDao {
 		return 0;
 	}
 
+	@Override
+	public int findByFalls(int idGranPremio) {
+		return estrepo.findByFalls(idGranPremio);
+	}
+
 }

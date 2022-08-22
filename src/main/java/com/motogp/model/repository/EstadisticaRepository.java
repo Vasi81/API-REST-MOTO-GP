@@ -16,5 +16,7 @@ public interface EstadisticaRepository extends JpaRepository<Estadistica, Intege
 	
 	@Query("select AVG(velocidadMedia) from Estadistica e where e.granPremio.idGranPremio=?1")
 	public int findByVelocidadMedia(int idGranPremio);
-
+	
+	@Query ("select caidas from Estadistica e where e.granPremio.idGranPremio=?1")
+	public int findByFalls(int idGranPremio);
 }

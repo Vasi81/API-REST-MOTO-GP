@@ -14,6 +14,8 @@ public interface EstadisticaDao {
 	
 	int findByVelocidadMedia(int idGranPremio);
 	
+	int findByFalls(int idGranPremio );
+	
 	int addEstadistica(Estadistica estadistica);
 	
 	int removeEstadistica(Estadistica estadistica, int id);

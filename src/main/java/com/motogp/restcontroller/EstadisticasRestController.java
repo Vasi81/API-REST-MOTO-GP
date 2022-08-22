@@ -25,6 +25,10 @@ public class EstadisticasRestController {
 	public List <Estadistica>findAll(){
 		return estdao.findAll();
 	}
+	@GetMapping("/statistics/falls/{idGranPremio}")
+	public int findByFalls(@PathVariable("idGranPremio") int idGranPremio) {
+		return estdao.findByFalls(idGranPremio);
+	}
 	
 	@GetMapping("/statistics/topspeed/{idGranPremio}")
 	public int findByTopSpeed(@PathVariable("idGranPremio")int idGranPremio){
