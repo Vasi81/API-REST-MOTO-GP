@@ -60,6 +60,26 @@ CIUDAD VARCHAR(40) NOT NULL,
 FECHA DATE NOT NULL,
 LONGITUD_CIRCUITO INT
 );
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Qatar', 'Doha', '2022-03-06', '5.380');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Indonesia', 'Mandalika', '2022-03-20', '4.000');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Argentina', 'Termas de Río Hondo', '2022-04-03', '4.806');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('EE.UU', 'Austin', '2022-04-10', '5.513');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Portugal', 'Algarve', '2022-04-24', '4.653');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('España', 'Jerez de la Frontera', '2022-05-01', '4.423');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Francia', 'Le Mans', '2022-05-15', '4.200');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Italia', 'Mugello', '2022-05-29', '5.245');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('España', 'Barcelona', '2022-06-05', '4.700');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Alemania', 'Sachsenring', '2022-06-19', '3.760');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Holanda', 'Assen', '2022-06-26', '4.750');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Gran Betaña', 'Silverstone', '2022-08-07', '5.900');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Austria', 'Spielberg', '2022-08-21', '5.942');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('San Marino', 'Misano', '2022-09-04', '4.060');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('España', 'Alcañiz, Aragón', '2022-09-18', '5.344');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Japón', 'Motegi', '2022-09-25', '4.800');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Tailandia', 'Buriram', '2022-10-02', '4.554');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Australia', 'Philip Island', '2022-10-16', '4.653');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('Malaysia', 'Sepang', '2022-10-23', '5.540');
+INSERT INTO `moto_gp`.`gran_premio` (`PAIS`, `CIUDAD`, `FECHA`, `longitud_circuito`) VALUES ('España', 'Valencia', '2022-11-06', '4.005');
 
 CREATE TABLE RESULTADOS
 (ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
